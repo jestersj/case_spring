@@ -1,0 +1,53 @@
+.bg {
+    background-image: url("../../../assets/spot1.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 15%;
+}
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.large_text {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.grad_button {
+    outline: none;
+    background: none;
+    border-radius: 10px;
+    border: none;
+    background: var(--main-color);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 20px;
+    width: 380px;
+    height: 90px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .cont {
+        margin-bottom: 70px;
+    }
+    .large_text {
+        font-size: 2rem;
+    }
+    .grad_button {
+        width: 70%;
+        height: auto;
+    }
+    .bg {
+        background-size: 36%;
+    }
+}

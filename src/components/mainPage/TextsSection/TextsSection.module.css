@@ -1,0 +1,20 @@
+.bg {
+    background-image: url("../../../assets/spot1.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.cont {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+@media (max-width: 900px) {
+    .bg {
+        background-size: 70%;
+    }
+}

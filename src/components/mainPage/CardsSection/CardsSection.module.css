@@ -1,0 +1,44 @@
+.cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid var(--main-color);
+    text-align: center;
+    width: 30%;
+    background: white;
+}
+.card h5 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.last_card {
+    text-align: left;
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    top: -60px;
+    z-index: -1;
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    .card {
+        width: 100%;
+    }
+    .bg {
+        transform: rotateY(180deg);
+        height: 100%;
+    }
+}

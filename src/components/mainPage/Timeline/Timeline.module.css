@@ -1,0 +1,10 @@
+.icon {
+    border: 3px solid #7435f3;
+    box-shadow: none;
+    background: #F3F5F7;
+}
+.date {
+    background: none;
+    font-weight: 700;
+    padding-top: 17px;
+}

@@ -1,0 +1,48 @@
+.content_center {
+    display: flex;
+    justify-content: center;
+}
+.large_text {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--main-color);
+}
+.input_cont {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 70px;
+}
+.radio_group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.grad_button {
+    outline: none;
+    background: none;
+    border-radius: 10px;
+    border: none;
+    background: var(--main-color);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 20px;
+    width: 380px;
+    height: 90px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+@media (max-width: 900px) {
+    .large_text {
+        font-size: 3rem;
+    }
+    .grad_button {
+        width: 100%;
+        height: auto;
+        margin-bottom: 70px;
+    }
+}

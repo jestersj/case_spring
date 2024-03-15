@@ -1,0 +1,7 @@
+.cont {
+    display: flex;
+}
+input[type='radio'] {
+    position: absolute;
+    opacity: 0;
+}

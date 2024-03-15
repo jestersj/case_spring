@@ -1,0 +1,59 @@
+.close {
+    text-align: right;
+    font-size: 1.2rem;
+    display: block;
+    cursor: pointer;
+}
+.large_text {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--main-color);
+    text-align: center;
+}
+.btn_group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.grad_button {
+    outline: none;
+    background: none;
+    border-radius: 10px;
+    border: none;
+    background: var(--main-color);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 20px;
+    width: 47%;
+    height: auto;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+.secondary_grad_button {
+    outline: none;
+    background: none;
+    border-radius: 10px;
+    border: none;
+    background: var(--secondary-color);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 20px;
+    width: 47%;
+    height: auto;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .grad_button, .secondary_grad_button {
+        width: 100%;
+    }
+}

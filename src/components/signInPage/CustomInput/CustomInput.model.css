@@ -1,0 +1,16 @@
+.label {
+    font-size: 1.2rem;
+    width: 100%;
+    background: #61dafb;
+}
+.label span {
+    color: red !important;
+}
+input[type='text'] {
+    width: 100%;
+    margin-top: 10px !important;
+    border: 2px solid var(--main-color);
+    border-radius: 7px;
+    outline: none;
+    padding: 7px;
+}

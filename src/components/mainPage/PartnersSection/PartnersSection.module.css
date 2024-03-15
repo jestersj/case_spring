@@ -1,0 +1,22 @@
+.cont {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.partner_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    width: 40%;
+}
+
+@media (max-width: 900px) {
+    .partner_block {
+        width: 100%;
+    }
+}
