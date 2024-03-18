@@ -3,6 +3,7 @@ import LogoBlock from "../components/mainPage/LogoBlock/LogoBlock";
 import s from './SignInPage.module.css'
 import CustomInput from "../components/signInPage/CustomInput/CustomInput";
 import CustomRadio from "../components/signInPage/CustomRadio/CustomRadio";
+import {registration} from "../http/userApi";
 
 const facultiesArr = [
     'Высшая инженерная школа “Новые материалы и технологии”',
@@ -30,9 +31,10 @@ const SignInPage = ({isRea}) => {
     const [success, setSuccess] = useState(false)
     const [error, setError] = useState(false)
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
         const obj = {
+            isRea,
             name,
             course,
             faculty,
@@ -41,7 +43,16 @@ const SignInPage = ({isRea}) => {
             teamName,
             captain,
         }
-        console.log(obj)
+        try {
+            const {data} = await registration(obj)
+            setSuccess(true)
+            setError(false)
+            console.log(data)
+        } catch (e) {
+            console.log(e)
+            setError(true)
+            setSuccess(false)
+        }
     }
     return (
         <div className={'custom_container'}>
