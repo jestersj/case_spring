@@ -68,6 +68,9 @@
     .block {
         width: 90%;
     }
+    .text {
+        margin-top: 50px;
+    }
     .large_text {
         font-size: 4rem;
     }

@@ -7,3 +7,16 @@
     align-items: center;
     background: var(--main-color);
 }
+.box img {
+    width: 60px;
+}
+
+@media (max-width: 900px) {
+    .box {
+        width: 70px;
+        height: 55px;
+    }
+    .box img {
+        width: 40px;
+    }
+}

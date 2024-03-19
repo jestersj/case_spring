@@ -15,8 +15,8 @@ const CustomRadio = ({value, checked,onClick}) => {
                 <input type="radio" checked={checked} required={true}/>
                 <span
                     style={{
-                        minWidth: 30,
-                        minHeight: 30,
+                        minWidth: 32,
+                        minHeight: 32,
                         border: '2px solid #7435f3',
                         borderRadius: '50%',
                         position: "relative"
@@ -25,13 +25,13 @@ const CustomRadio = ({value, checked,onClick}) => {
                     {checked &&
                         <div
                             style={{
-                                minWidth: 15,
-                                minHeight: 15,
+                                minWidth: 16,
+                                minHeight: 16,
                                 background: '#7435f3',
                                 borderRadius: '50%',
                                 position: "absolute",
-                                top: 6,
-                                left: 6
+                                top: 'calc(50% - 8px)',
+                                left: 'calc(50% - 8px)'
                             }}
                         />
                     }
