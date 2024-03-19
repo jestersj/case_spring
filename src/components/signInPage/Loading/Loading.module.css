@@ -1,0 +1,19 @@
+.cont {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.img {
+    animation-name: rotate !important;
+    animation: 3s linear infinite;
+    width: 100px;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}

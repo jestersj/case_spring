@@ -4,6 +4,7 @@ import s from './SignInPage.module.css'
 import CustomInput from "../components/signInPage/CustomInput/CustomInput";
 import CustomRadio from "../components/signInPage/CustomRadio/CustomRadio";
 import {registration} from "../http/userApi";
+import Loading from "../components/signInPage/Loading/Loading";
 
 const facultiesArr = [
     'Высшая инженерная школа “Новые материалы и технологии”',
@@ -28,6 +29,7 @@ const SignInPage = ({isRea}) => {
     const [teamName, setTeamName] = useState('')
     const [captain, setCaptain] = useState('')
 
+    const [loading, setLoading] = useState(false)
     const [success, setSuccess] = useState(false)
     const [error, setError] = useState(false)
 
@@ -44,14 +46,19 @@ const SignInPage = ({isRea}) => {
             captain,
         }
         try {
-            const {data} = await registration(obj)
-            setSuccess(true)
-            setError(false)
-            console.log(data)
+            if (!loading) {
+                setLoading(true)
+                setError(false)
+                const {data} = await registration(obj)
+                setLoading(false)
+                setSuccess(true)
+                console.log(data)
+            }
         } catch (e) {
             console.log(e)
             setError(true)
             setSuccess(false)
+            setLoading(false)
         }
     }
     return (
@@ -102,6 +109,7 @@ const SignInPage = ({isRea}) => {
                 <button type={'submit'} className={s.grad_button}>
                     Отправить
                 </button>
+                {loading && <Loading/>}
                 {success && <h3 className={'text_center'} style={{color: 'green'}}>Заявка успешно отправлена</h3>}
                 {error && <h3 className={'text_center'} style={{color: 'red'}}>Произошла ошибка, попробуйте позже</h3>}
             </form>
