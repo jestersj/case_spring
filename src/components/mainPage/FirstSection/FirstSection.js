@@ -22,7 +22,7 @@ const FirstSection = () => {
                     <LogoBlock/>
                     <div className={[s.text].join(' ')}>
                         <p className={s.small_text}>Финалы</p>
-                        <p className={s.big_text}>18/19 апреля</p>
+                        <p className={s.big_text}>22/24 апреля</p>
                     </div>
                 </div>
             </div>
