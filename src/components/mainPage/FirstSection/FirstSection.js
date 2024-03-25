@@ -17,7 +17,7 @@ const FirstSection = () => {
                 <div className={s.block}>
                     <div className={[s.text, 'text_right'].join(' ')}>
                         <p className={s.small_text}>Начало регистрации</p>
-                        <p className={s.big_text}>23 марта</p>
+                        <p className={s.big_text}>26 марта</p>
                     </div>
                     <LogoBlock/>
                     <div className={[s.text].join(' ')}>

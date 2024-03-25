@@ -5,7 +5,7 @@ import s from './Timeline.module.css'
 
 const dates = [
     {
-        date: '23 марта - 3 апреля',
+        date: '26 марта - 3 апреля',
         event: 'Регистрация участников'
     },
     {
