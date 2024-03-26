@@ -91,7 +91,7 @@ const SignInPage = ({isRea}) => {
                 }
                 <CustomInput label={'Ваш ник в TG'} value={tg} onChange={setTg}/>
                 <CustomInput label={'Ссылка на Ваш VK'} value={vk} onChange={setVk}/>
-                <CustomInput label={'Название команды'}
+                <CustomInput label={'Название команды, секция (Marketing/Strategy)'}
                              value={teamName}
                              onChange={setTeamName} description={'Если у Вас нет команды, поставьте “-”, и мы Вас распределим'}
                 />
